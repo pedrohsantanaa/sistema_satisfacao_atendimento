@@ -1,14 +1,18 @@
 <?php
 session_start();
-include("cabecalho.php");
+
 include("../bd/conect.php");
 
-if (!$_SESSION['usuario']) {
+if (empty($_SESSION['usuario'])) {
     header("Location: login.php");
     exit();
 }
 
 ?>
+
+<?php include("cabecalho.php");?>
+
+
 <link rel="stylesheet" href="../css/style.css">
 <html>
 

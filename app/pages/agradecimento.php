@@ -1,10 +1,13 @@
 <?php 
-    include('cabecalho.php');
+    
     include('../bd/conect.php');
     $escolha = $_GET["acao"];
     Inserir($escolha);
     header("Refresh: 5; url=../index.php");
 ?>
+
+<?php include('cabecalho.php'); ?>
+
 <link rel="stylesheet" href="../css/style.css">
 
 <main class="container-fluid">
